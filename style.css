@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Courier New', monospace;
     color: #00ff00;
-    background: black url('./images/giphy.webp') no-repeat center center;
+    background: black url('/giphy.webp') no-repeat center center;
     background-size: cover;
     text-align: center;
     display: flex;
