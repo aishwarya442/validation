@@ -1,0 +1,83 @@
+/* General Styles for All Pages */
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+    background: black url('./images/giphy.webp') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    z-index: 10;
+    max-width: 80%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ff00;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
+    animation: glow-border 3s infinite alternate;
+}
+
+h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00;
+}
+
+p, ul {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: #000;
+    background: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #00ff00;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: #001f00;
+    color: #00ff00;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+/* Glowing Border Animation */
+@keyframes glow-border {
+    from {
+        box-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00;
+    }
+    to {
+        box-shadow: 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+}
+
+/* Glow Effect for Headings */
+@keyframes text-glow {
+    0% { text-shadow: 0 0 10px #00ff00; }
+    100% { text-shadow: 0 0 20px #00ff00; }
+}
